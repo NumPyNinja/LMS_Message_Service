@@ -1,0 +1,20 @@
+server:
+  port: 5678
+  servlet:
+    context-path: /lms_message
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/LMS_Message_DB
+    username: postgres
+    password: admin
+  jackson.deserialization.fail-on-unknown-properties: true
+  jackson.serialization.fail-on-empty-beans: false
+  mvc.hiddenmethod.filter.enabled: true
+  main.allow-bean-definition-overriding: true
+  jpa.hibernate.ddl-auto: update
+
+
+
+lms:
+  api:
+    base-url: http://localhost:1234/lms
